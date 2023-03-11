@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import "./App.css";
+import Nav from "./Nav/Nav";
+import Footer from "../src/Footer/Footer";
+import AllertSection from "./AllertSection/AllertSection";
+import IpadMacBook from "./IpadMacBook/IpadMacBook";
+import "./commonResource/css/bootstrap.css";
+import "./commonResource/css/styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Nav />
+        <AllertSection />
+        <IpadMacBook />
+        <Footer />
+      </div>
+    );
+  }
 }
-
 export default App;
